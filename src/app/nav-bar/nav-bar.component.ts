@@ -19,5 +19,7 @@ Products() {
 Home() {
   this.router.navigate(['/']);
 }
-
+Panier() {
+  this.router.navigate(['/panier']);
+}
 }
