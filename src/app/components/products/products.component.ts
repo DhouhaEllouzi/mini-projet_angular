@@ -34,6 +34,7 @@ export class ProductsComponent {
   constructor(private productsService: ProductsService, private router: Router) {}
 
   ngOnInit(): void {
+    this.onGetAllProducts();
   }
 
   onGetAllProducts(): void {
