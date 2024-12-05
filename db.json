@@ -29,7 +29,7 @@
       "name": "Herbal Shampoo",
       "price": 10.25,
       "quantity": 50,
-      "selected": true,
+      "selected": false,
       "available": true
     },
     {
@@ -53,7 +53,7 @@
       "name": "Baby Lotion",
       "price": 9.5,
       "quantity": 40,
-      "selected": true,
+      "selected": false,
       "available": true
     },
     {
@@ -61,7 +61,7 @@
       "name": "Probiotic Capsules",
       "price": 18.99,
       "quantity": "30",
-      "selected": true,
+      "selected": false,
       "available": true
     },
     {

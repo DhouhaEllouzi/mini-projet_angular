@@ -1,1 +1,55 @@
-<p>panier works!</p>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a routerLink="/" class="btn btn-info btn-sm me-2">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/panier" class="btn btn-outline-info btn-sm me-2">Panier</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container my-4">
+    <h2 class="mb-4 text-center">Your Panier</h2>
+    <ng-container *ngIf="products.length > 0; else emptyPanier">
+        <table class="table table-striped table-hover shadow-sm">
+            <thead class="table-info">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.price | currency }}</td>
+                    <td>{{ product.quantity }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center mt-4">
+            <button class="btn btn-success btn-lg" (click)="buyProducts()">Buy</button>
+        </div>
+        <div class="alert alert-success mt-4" role="alert" *ngIf="purchaseDone">
+            {{ purchaseMessage }}
+        </div>
+    </ng-container>
+    
+    <ng-template #emptyPanier>
+        <div class="alert alert-warning text-center" role="alert">
+            Your panier is empty. Add some products!
+        </div>
+    </ng-template>
+</div>
