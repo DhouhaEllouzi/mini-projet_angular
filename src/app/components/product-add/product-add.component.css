@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Form Styling */
+.form-group label {
+    color: #0288d1; /* Bleu pour les labels */
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 25px;
+    border: 1px solid #0288d1; /* Bordure bleue */
+    padding: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #01579b; /* Bordure bleue foncée au focus */
+    box-shadow: 0 0 8px rgba(1, 87, 155, 0.5);
+}
+
+.is-invalid {
+    border-color: #d32f2f; /* Rouge vif pour erreur */
+}
+
+.invalid-feedback {
+    color: #d32f2f;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0288d1; /* Bleu primaire */
+    border-color: #0288d1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #01579b; /* Bleu foncé au survol */
+    border-color: #01579b;
+}
+
+/* Checkbox & Switch Style */
+.form-check-label {
+    color: #0288d1; /* Bleu pour les labels des checkboxes */
+}
+
+.form-check-input:checked {
+    background-color: #0288d1; /* Case cochée bleue */
+    border-color: #0288d1;
+}
+
+/* Action Buttons */
+.btn {
+    border-radius: 25px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #01579b; /* Bleu foncé au survol */
+    color: white;
+}
+
+/* Badge for Status */
+.badge {
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+.bg-success {
+    background-color: #4caf50 !important; /* Vert clair */
+}
+
+.bg-danger {
+    background-color: #d32f2f !important; /* Rouge vif */
+}
+
+.bg-secondary {
+    background-color: #90a4ae !important; /* Gris bleuté */
+}
+
+/* Responsive Table */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Alerts */
+.alert {
+    margin-top: 20px;
+}
+
+/* Spinner */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3rem;
+}

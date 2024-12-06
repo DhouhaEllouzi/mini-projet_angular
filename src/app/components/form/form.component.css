@@ -1,0 +1,65 @@
+/* Style pour le conteneur du formulaire */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style du titre */
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  /* Style des champs du formulaire */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Focus sur les champs du formulaire */
+  input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Style du bouton de soumission */
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Effet au survol du bouton */
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Message d'erreur (si nécessaire) */
+  .form-group .invalid-feedback {
+    color: #dc3545;
+  }
+  

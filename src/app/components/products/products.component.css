@@ -2,95 +2,94 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
-  }
-  
-  /* Navbar */
-  .navbar {
-    background-color: #00796b;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0288d1; /* Bleu */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-toggler-icon {
+}
+
+.navbar-toggler-icon {
     background-color: white;
-  }
-  
-  .navbar .nav-item .btn {
+}
+
+.navbar .nav-item .btn {
     border-radius: 20px;
-  }
-  
-  /* Table */
-  .table {
+}
+
+/* Table */
+.table {
     border-radius: 8px;
     overflow: hidden;
-  }
-  
-  .table-info {
-    background-color: #4caf50;
+}
+
+.table-info {
+    background-color: #81d4fa; /* Bleu clair */
     color: white;
-  }
-  
-  .table-striped tbody tr:nth-child(odd) {
-    background-color: #e0f7fa;
-  }
-  
-  .table-hover tbody tr:hover {
-    background-color: #e0f7fa;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #e1f5fe; /* Bleu très clair */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e1f5fe;
     cursor: pointer;
-  }
-  
-  /* Action Buttons */
-  .btn {
+}
+
+/* Action Buttons */
+.btn {
     border-radius: 25px;
     padding: 8px 16px;
     transition: background-color 0.3s ease;
-  }
-  
-  .btn:hover {
-    background-color: #004d40;
+}
+
+.btn:hover {
+    background-color: #01579b; /* Bleu foncé au survol */
     color: white;
-  }
-  
-  .btn-info, .btn-outline-info {
-    background-color: #00796b;
+}
+
+.btn-info, .btn-outline-info {
+    background-color: #64b5f6; /* Bleu clair */
     color: white;
-  }
-  
-  .btn-info:hover, .btn-outline-info:hover {
-    background-color: #004d40;
-  }
-  
-  /* Badge for Status */
-  .badge {
+}
+
+.btn-info:hover, .btn-outline-info:hover {
+    background-color: #01579b; /* Bleu foncé au survol */
+}
+
+/* Badge for Status */
+.badge {
     padding: 6px 12px;
     border-radius: 12px;
-  }
-  
-  .bg-success {
-    background-color: #4caf50 !important;
-  }
-  
-  .bg-danger {
-    background-color: #f44336 !important;
-  }
-  
-  .bg-secondary {
-    background-color: #607d8b !important;
-  }
-  
-  /* Responsive Table */
-  .table-responsive {
+}
+
+.bg-success {
+    background-color: #4caf50 !important; /* Vert clair */
+}
+
+.bg-danger {
+    background-color: #d32f2f !important; /* Rouge vif */
+}
+
+.bg-secondary {
+    background-color: #90a4ae !important; /* Gris bleuté */
+}
+
+/* Responsive Table */
+.table-responsive {
     overflow-x: auto;
-  }
-  
-  /* Spinner */
-  .spinner-border {
+}
+
+/* Spinner */
+.spinner-border {
     width: 3rem;
     height: 3rem;
     border-width: 0.3rem;
-  }
-  
-  /* Alerts */
-  .alert {
+}
+
+/* Alerts */
+.alert {
     margin-top: 20px;
-  }
-  
+}
