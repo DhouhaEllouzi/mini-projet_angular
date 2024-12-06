@@ -12,7 +12,10 @@ import { Router } from '@angular/router';
 
 export class NavBarComponent {
   constructor(private router: Router) { }
-
+  ngOnInit(): void {
+    // On initialise la navigation vers "All Products" par défaut
+    this.router.navigate(['/']);
+  }
 Products() {
   this.router.navigate(['/products']);
 }

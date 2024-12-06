@@ -1,46 +1,96 @@
-/* Navbar Styles */
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-}
-
-/* Table Styles */
-.table {
-    border-radius: 5px;
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #00796b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+  
+  .navbar .nav-item .btn {
+    border-radius: 20px;
+  }
+  
+  /* Table */
+  .table {
+    border-radius: 8px;
     overflow: hidden;
-    border: 1px solid #dee2e6;
-}
-
-.table-hover tbody tr:hover {
-    background-color: #f8f9fa;
-}
-
-.table-info {
-    background-color: #4520be;
-    color: #fff;
-}
-
-/* Buttons */
-.btn {
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    opacity: 0.85;
-}
-
-/* Badge Styles */
-.badge {
-    font-size: 0.85rem;
-    padding: 0.4em 0.6em;
-}
-
-/* Spinner */
-.spinner-border {
+  }
+  
+  .table-info {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #e0f7fa;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+  }
+  
+  /* Action Buttons */
+  .btn {
+    border-radius: 25px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #004d40;
+    color: white;
+  }
+  
+  .btn-info, .btn-outline-info {
+    background-color: #00796b;
+    color: white;
+  }
+  
+  .btn-info:hover, .btn-outline-info:hover {
+    background-color: #004d40;
+  }
+  
+  /* Badge for Status */
+  .badge {
+    padding: 6px 12px;
+    border-radius: 12px;
+  }
+  
+  .bg-success {
+    background-color: #4caf50 !important;
+  }
+  
+  .bg-danger {
+    background-color: #f44336 !important;
+  }
+  
+  .bg-secondary {
+    background-color: #607d8b !important;
+  }
+  
+  /* Responsive Table */
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  /* Spinner */
+  .spinner-border {
     width: 3rem;
     height: 3rem;
-}
+    border-width: 0.3rem;
+  }
+  
+  /* Alerts */
+  .alert {
+    margin-top: 20px;
+  }
+  

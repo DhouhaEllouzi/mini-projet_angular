@@ -13,15 +13,15 @@
       "name": "Moisturizing Cream",
       "price": 8.99,
       "quantity": 120,
-      "selected": false,
+      "selected": true,
       "available": true
     },
     {
       "id": "3",
       "name": "Sunscreen SPF 50",
-      "price": 12.50,
+      "price": 12.5,
       "quantity": 80,
-      "selected": false,
+      "selected": true,
       "available": true
     },
     {
@@ -51,7 +51,7 @@
     {
       "id": "7",
       "name": "Baby Lotion",
-      "price": 9.50,
+      "price": 9.5,
       "quantity": 40,
       "selected": true,
       "available": true
@@ -75,7 +75,7 @@
     {
       "id": "10",
       "name": "Lip Balm",
-      "price": 3.50,
+      "price": 3.5,
       "quantity": 150,
       "selected": false,
       "available": true

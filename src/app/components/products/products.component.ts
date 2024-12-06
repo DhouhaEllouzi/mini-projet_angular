@@ -1,12 +1,13 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Product } from '../../model/product.model';
 import { ProductsService } from '../../services/products.service';
-import { Observable , of} from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { catchError, map, startWith } from 'rxjs/operators';
 import { AppDataState, DataStateEnum } from '../../state/product.state';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-products',
   standalone: true,
@@ -15,10 +16,20 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   templateUrl: './products.component.html',
-  styleUrl: './products.component.css'
+  styleUrls: ['./products.component.css'] // Correction de l'orthographe 'styleUrls' au lieu de 'styleUrl'
 })
 export class ProductsComponent {
-  onAllProducts() {
+  products$: Observable<AppDataState<Product[]>> | null = null;
+  readonly DataStateEnum = DataStateEnum;
+
+  constructor(private productsService: ProductsService, private router: Router) {}
+
+  ngOnInit(): void {
+    // Appel de la méthode pour afficher les produits au chargement de la page
+    this.onAllProducts();
+  }
+
+  onAllProducts(): void {
     this.products$ = this.productsService.getAllProducts().pipe(
       map(data => {
         console.log(data);
@@ -26,26 +37,6 @@ export class ProductsComponent {
       }),
       startWith({ dataState: DataStateEnum.LOADING }),
       catchError(err => of({ dataState: DataStateEnum.ERROR, errorMessage: err.message }))
-    );
-  }  
-  products$: Observable<AppDataState<Product[]>> | null = null;
-  readonly DataStateEnum = DataStateEnum;
-
-  constructor(private productsService: ProductsService, private router: Router) {}
-
-  ngOnInit(): void {
-  }
-
-  onGetAllProducts(): void {
-    this.products$ = this.productsService.getAllProducts().pipe(
-      map(data => {
-        console.log(data);
-        return { dataState: DataStateEnum.LOADED, data: data };
-      }),
-      startWith({ dataState: DataStateEnum.LOADING }),
-      catchError(err =>
-        of({ dataState: DataStateEnum.ERROR, errorMessage: err.message })
-      )
     );
   }
 
@@ -56,9 +47,7 @@ export class ProductsComponent {
         return { dataState: DataStateEnum.LOADED, data: data };
       }),
       startWith({ dataState: DataStateEnum.LOADING }),
-      catchError(err =>
-        of({ dataState: DataStateEnum.ERROR, errorMessage: err.message })
-      )
+      catchError(err => of({ dataState: DataStateEnum.ERROR, errorMessage: err.message }))
     );
   }
 
@@ -69,9 +58,7 @@ export class ProductsComponent {
         return { dataState: DataStateEnum.LOADED, data: data };
       }),
       startWith({ dataState: DataStateEnum.LOADING }),
-      catchError(err =>
-        of({ dataState: DataStateEnum.ERROR, errorMessage: err.message })
-      )
+      catchError(err => of({ dataState: DataStateEnum.ERROR, errorMessage: err.message }))
     );
   }
 
@@ -82,9 +69,7 @@ export class ProductsComponent {
         return { dataState: DataStateEnum.LOADED, data: data };
       }),
       startWith({ dataState: DataStateEnum.LOADING }),
-      catchError(err =>
-        of({ dataState: DataStateEnum.ERROR, errorMessage: err.message })
-      )
+      catchError(err => of({ dataState: DataStateEnum.ERROR, errorMessage: err.message }))
     );
   }
 
@@ -95,18 +80,19 @@ export class ProductsComponent {
   }
 
   onDelete(p: Product): void {
-    const confirmDelete = confirm("Êtes-vous sûr?");
+    const confirmDelete = confirm('Êtes-vous sûr?');
     if (confirmDelete) {
       this.productsService.deleteProduct(p).subscribe(() => {
-        this.onGetAllProducts();
+        this.onAllProducts(); // Rechargement des produits après suppression
       });
     }
   }
 
   onNewProduct(): void {
-    this.router.navigateByUrl("/newProduct");
+    this.router.navigateByUrl('/newProduct');
   }
+
   onEdit(p: Product) {
-    this.router.navigateByUrl("/editProduct/" + p.id);
+    this.router.navigateByUrl('/editProduct/' + p.id);
   }
 }
