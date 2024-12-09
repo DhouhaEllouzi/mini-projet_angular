@@ -5,7 +5,7 @@
       "name": "Vitamin C Tablets",
       "price": 15.99,
       "quantity": 200,
-      "selected": true,
+      "selected": false,
       "available": true
     },
     {
@@ -13,7 +13,7 @@
       "name": "Moisturizing Cream",
       "price": 8.99,
       "quantity": 120,
-      "selected": true,
+      "selected": false,
       "available": true
     },
     {
@@ -37,7 +37,7 @@
       "name": "Antiseptic Wipes",
       "price": 5.99,
       "quantity": 300,
-      "selected": false,
+      "selected": true,
       "available": true
     },
     {
@@ -45,7 +45,7 @@
       "name": "Pain Relief Gel",
       "price": 6.75,
       "quantity": 60,
-      "selected": false,
+      "selected": true,
       "available": true
     },
     {

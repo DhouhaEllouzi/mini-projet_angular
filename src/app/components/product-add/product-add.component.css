@@ -6,20 +6,20 @@ body {
 
 /* Form Styling */
 .form-group label {
-    color: #0288d1; /* Bleu pour les labels */
+    color: #388e3c; /* Vert pour les labels */
     font-weight: bold;
 }
 
 .form-control {
     border-radius: 25px;
-    border: 1px solid #0288d1; /* Bordure bleue */
+    border: 1px solid #388e3c; /* Bordure verte */
     padding: 12px;
     transition: border-color 0.3s ease;
 }
 
 .form-control:focus {
-    border-color: #01579b; /* Bordure bleue foncée au focus */
-    box-shadow: 0 0 8px rgba(1, 87, 155, 0.5);
+    border-color: #2c6e2f; /* Bordure verte foncée au focus */
+    box-shadow: 0 0 8px rgba(44, 110, 47, 0.5);
 }
 
 .is-invalid {
@@ -34,8 +34,8 @@ body {
 
 /* Button Styles */
 .btn-primary {
-    background-color: #0288d1; /* Bleu primaire */
-    border-color: #0288d1;
+    background-color: #388e3c; /* Vert primaire */
+    border-color: #388e3c;
     color: white;
     padding: 10px 20px;
     border-radius: 25px;
@@ -44,18 +44,18 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #01579b; /* Bleu foncé au survol */
-    border-color: #01579b;
+    background-color: #2c6e2f; /* Vert foncé au survol */
+    border-color: #2c6e2f;
 }
 
 /* Checkbox & Switch Style */
 .form-check-label {
-    color: #0288d1; /* Bleu pour les labels des checkboxes */
+    color: #388e3c; /* Vert pour les labels des checkboxes */
 }
 
 .form-check-input:checked {
-    background-color: #0288d1; /* Case cochée bleue */
-    border-color: #0288d1;
+    background-color: #388e3c; /* Case cochée verte */
+    border-color: #388e3c;
 }
 
 /* Action Buttons */
@@ -66,7 +66,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #01579b; /* Bleu foncé au survol */
+    background-color: #2c6e2f; /* Vert foncé au survol */
     color: white;
 }
 

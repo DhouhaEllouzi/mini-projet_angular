@@ -1,13 +1,30 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- Logo ou nom du site -->
+  <img src="assets/images/logo.png" alt="Logo Parapharmacie" class="header-image me-3">
   <a class="navbar-brand fw-bold text-info" href="#">ParaHealth</a>
-<ul class="navbar-nav">
-<li class="nav-item">
-<a class="nav-link" (click)="Home()">Home</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" (click)="Products()">Products</a>
-<li class="nav-item">
-  <a class="nav-link" (click)="handleChartClick($event)">Chart</a>
-</li>
-</ul>
+ 
+  
+  <!-- Bouton pour le menu mobile -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Liens de navigation -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" (click)="Home()">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" (click)="Products()">Products</a>
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="handleChartClick($event)">Chart</a>
+      </li>
+    </ul>
+  </div>
 </nav>

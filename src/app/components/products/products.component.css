@@ -6,7 +6,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #0288d1; /* Bleu */
+    background-color: #388e3c; /* Vert principal */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -25,17 +25,25 @@ body {
 }
 
 .table-info {
-    background-color: #81d4fa; /* Bleu clair */
+    background-color: #81c784; /* Vert clair */
     color: white;
 }
 
 .table-striped tbody tr:nth-child(odd) {
-    background-color: #e1f5fe; /* Bleu très clair */
+    background-color: #a5d6a7; /* Vert très clair */
 }
 
 .table-hover tbody tr:hover {
-    background-color: #e1f5fe;
+    background-color: #a5d6a7;
     cursor: pointer;
+}
+
+/* Table header in green */
+.table th {
+    background-color: #388e3c; /* Vert pour l'en-tête */
+    color: white; /* Couleur du texte en blanc */
+    font-weight: bold;
+    text-align: center;
 }
 
 /* Action Buttons */
@@ -46,17 +54,17 @@ body {
 }
 
 .btn:hover {
-    background-color: #01579b; /* Bleu foncé au survol */
+    background-color: #2c6e2f; /* Vert foncé au survol */
     color: white;
 }
 
 .btn-info, .btn-outline-info {
-    background-color: #64b5f6; /* Bleu clair */
+    background-color: #66bb6a; /* Vert clair */
     color: white;
 }
 
 .btn-info:hover, .btn-outline-info:hover {
-    background-color: #01579b; /* Bleu foncé au survol */
+    background-color: #2c6e2f; /* Vert foncé au survol */
 }
 
 /* Badge for Status */
@@ -93,3 +101,32 @@ body {
 .alert {
     margin-top: 20px;
 }
+td .btn {
+    margin-right: 15px;
+  }
+  
+  td .btn:last-child {
+    margin-right: 0; /* Supprime l'espacement pour le dernier bouton */
+  }
+  /* Table Styles with Borders */
+.table {
+    border: 1px solid #ddd; /* Bordure principale autour du tableau */
+    border-collapse: collapse; /* Fusion des bordures pour un rendu propre */
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd; /* Bordure autour de chaque cellule */
+    padding: 8px; /* Espacement à l'intérieur des cellules */
+    text-align: center; /* Centrer le contenu */
+  }
+  
+  .table th {
+    background-color: #4caf50; /* Couleur de fond pour les en-têtes */
+    color: white; /* Couleur du texte des en-têtes */
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1; /* Fond gris clair au survol */
+  }
+  

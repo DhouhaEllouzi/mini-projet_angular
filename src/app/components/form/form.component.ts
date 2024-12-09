@@ -14,7 +14,9 @@ export class FormComponent {
     name: '',
     address: '',
     phoneNumber: '',
-    creditCard: ''
+    creditCard: '',
+    secretCode: '',  // Vous pouvez aussi ajouter un champ secretCode ici si nécessaire
+    deliveryDate: ''  // Ajout du champ de date
   };
 
   onSubmit() {
